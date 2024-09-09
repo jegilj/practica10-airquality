@@ -6,9 +6,7 @@ env:
   AUTOMATION_EMAIL: "jegilj@unirioja.es"
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: "21 7 * * *"
+  push
 jobs:
   run-etl-pipeline:
     runs-on: ubuntu-latest
